@@ -1,0 +1,180 @@
+body {
+  height: 100%;
+  background: #17121E url(../img/fondo.jpg) repeat fixed center;
+  background-size: cover; 
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+	align-items: center;
+	width: 470px;
+	height: 260px;
+}
+
+.principal{
+	background-color: white;	
+	border-radius: 17px;
+	box-shadow: 0px 5px 20px rgba(0,0,0,0.5);
+}
+
+.sector-arriba, .sector-abajo {
+	width: 470px;
+	height: 130px;
+	box-sizing: border-box;
+	padding: 15px;
+	display: flex;
+}
+
+.sector-arriba {
+	background: #BD8645;
+	border-top-left-radius: 17px;
+	border-top-right-radius: 17px;
+	box-shadow: 0px 5px 20px rgba(0,0,0,0.3);
+}
+
+.boton-arriba, .boton-abajo {
+	width: 100px;
+	height: 100px;
+	border-radius: 15px;
+}
+
+.datos-arriba, .datos-abajo {
+	width: 343px;
+	height: 100px;
+}
+
+.datos-arriba {
+	color: white;
+}
+
+.imagen-arriba, .imagen-abajo {
+	width: 100px;
+	height: 68px;
+	display: block;
+	box-shadow: inset 0 0 10px black;
+	border-radius: 15px;
+	transition: background-image 0.5s;
+}
+
+.imagen-arriba {
+	background: #ffffff url(../img/flags/USA.png) no-repeat center;
+    background-size: cover;
+}
+
+.imagen-abajo {
+	background: #ffffff url(../img/flags/ARS.png) no-repeat center;
+    background-size: cover;
+}
+
+h5 {
+	text-transform: uppercase;
+	font-weight: 500;
+	font-size: 20px;
+	padding-left: 7px;
+	letter-spacing: 4px;
+}
+
+
+input, h1 {
+	margin-left: 30px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	font-size: 40px;
+	padding-top: 15px;
+	letter-spacing: 5px;
+	background-color: transparent;
+	border: none;
+	width: 270px;
+	max-width: 270px;
+	height: 40px;
+	text-align: right;
+}
+
+.input{
+	color: white;
+	border-bottom: 2px solid rgba(255,255,255,0.2);
+}
+
+.resultado {
+	color: #999;
+}
+
+.datos-arriba ::-webkit-input-placeholder {
+	color: white;
+}
+
+.dinero-arriba, .dinero-abajo {
+	text-align: right;
+	font-size: 20px;
+	margin-top: 20px;
+	margin-left: 30px;
+	height: 25px;
+	width: 260px;
+	cursor: default;
+}
+
+h1 {
+	cursor: default;
+}
+
+.dinero-abajo {
+	color: #aaa;
+}
+
+.dinero-arriba {
+	color:  white;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+.numeros {
+	display: flex;
+}
+
+h3 {
+	padding-top: 30px;
+	display: block;
+	width: 40px;
+	vertical-align: end;
+	font-size: 20px;
+	font-weight: 600;
+	color: white;
+}
+
+.datos-abajo h3 {
+	color: #aaa;
+}
+
+@media screen and (max-width: 470px) {
+	.container, .sector-arriba, .sector-abajo {
+		width: 100%;
+	}
+	.sector-arriba, .sector-abajo {
+		padding: 3%;
+	}
+	.boton-arriba, .boton-abajo {
+		width: 21%;
+	}
+	.datos-arriba, .datos-abajo {
+		width: 78%;
+	}
+	.imagen-arriba,.imagen-abajo{
+		width: 100%;
+	}
+	input, h1 {
+		padding-top: 20px;
+		width: 85%;
+		font-size: 190%;
+	}
+	.dinero-arriba, .dinero-abajo {
+		width: 75%;	
+	}
+}
