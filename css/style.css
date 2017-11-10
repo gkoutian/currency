@@ -157,6 +157,20 @@ h3 {
 	.container, .sector-arriba, .sector-abajo {
 		width: 100%;
 	}
+
+	.container {
+		margin-left: 0;
+	}
+
+	.dinero-arriba, .dinero-abajo, .simbolo-arriba, .simbolo-abajo {
+		font-size: 13px;
+		margin-top: 10px;
+	}
+
+	.input, .resultado {
+		font-size: 150%;
+	}
+
 	.sector-arriba, .sector-abajo {
 		padding: 3%;
 	}
