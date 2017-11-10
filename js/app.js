@@ -23,15 +23,15 @@ function updateBoxDimension() {
 var objmoneda = {"USA": 1};
 
 $.ajax({
-	url:'http://apilayer.net/api/live?access_key=5a9d1bc79ed0fce6428e894776bc0b8b&currencies=USD,ARS,BTC,BRL,CLP,GBP,EUR&format=1',
+	url:'https://openexchangerates.org/api/latest.json?app_id=837fbf2eded24b129de8940ade755b37',
 	success: function (data) {
-		var moneda = data.quotes;
-		objmoneda.ARS = moneda.USDARS;
-		objmoneda.BRL = moneda.USDBRL;
-		objmoneda.BTC = moneda.USDBTC;
-		objmoneda.CLP = moneda.USDCLP;
-		objmoneda.EUR = moneda.USDEUR;
-		objmoneda.GBP = moneda.USDGBP	;
+		var moneda = data.rates;
+		objmoneda.ARS = moneda.ARS;
+		objmoneda.BRL = moneda.BRL;
+		objmoneda.BTC = moneda.BTC;
+		objmoneda.CLP = moneda.CLP;
+		objmoneda.EUR = moneda.EUR;
+		objmoneda.GBP = moneda.GBP	;
 	},
 	error: function () {
 	}
