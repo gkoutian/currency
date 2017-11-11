@@ -11,4 +11,4 @@ Una convertidor de moneda hecho con jQuery y [nice-select](https://github.com/he
 
 Visita: [www.gustavokoutian.com/proyectos/currency/](https://www.gustavokoutian.com/proyectos/currency/)	
 
-![Imagen de la pagina](https://gkoutian.github.io/currency/img/sample.png)
+![Imagen de la pagina](https://raw.githubusercontent.com/gkoutian/currency/master/img/sample.png)
