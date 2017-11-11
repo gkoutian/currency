@@ -9,6 +9,6 @@ Una convertidor de moneda hecho con jQuery y [nice-select](https://github.com/he
 * Libras
 * Bitcoins
 
-Visita: [gkoutian.github.io/currency](http://gkoutian.github.io/currency)	
+Visita: [www.gustavokoutian.com/proyectos/currency/](https://www.gustavokoutian.com/proyectos/currency/)	
 
 ![Imagen de la pagina](https://gkoutian.github.io/currency/img/sample.png)
