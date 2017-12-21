@@ -4,22 +4,6 @@ $(document).ready(function() {
   $('select').niceSelect();
 });
 
-$(updateBoxDimension);
-
-$(window).resize(function () {
-	updateBoxDimension();
-});
-
-function updateBoxDimension() {
-  var $container = $('.container');
-  var containerTop = ($(window).height() / 2) - ($container.height() / 2);
-  $container.css({marginTop: containerTop});
-  if ($(window).width() > 469) {
-    var containerLeft = (($(window).width() - $container.width())/ 2) ;
-    $container.css({marginLeft: containerLeft});
-  }
-}
-
 var objmoneda = {"USA": 1};
 
 $.ajax({
